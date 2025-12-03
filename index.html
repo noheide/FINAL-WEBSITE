@@ -46,9 +46,12 @@
 
         /* Main 1200px centered container */
         .container {
-            width: 1200px;
-            margin: 0 auto;
-        }
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 1000px; /* or big enough to contain all images */
+}
+
 
         /* Hero image */
         .hero-image {
@@ -59,7 +62,149 @@
             background-size: cover;
             background-position: center;
             background-image: url('tentfire12119-vhe-700h.png');
+            position: relative;
         }
+      
+        .image-forestwide {
+         width: 320px;
+         height: 236px;
+         position: absolute;
+         top: 687px; 
+         left: 0px;
+         border-radius: 23px;
+         background-image: url('forestwide.png');
+         background-size: cover;
+         background-position: center;
+        }
+      
+    .image-simeonrunning {
+    width: 320px;
+    height: 226px;
+    position: absolute;
+    top: 687px; /* moved up 20px */
+    left: 880px;
+    border-radius: 23px;
+    background-image: url('simeonrunning.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-granadacastle {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 687px; /* keep same as before */
+    left: 440px; /* perfectly centered in 1200px container */
+    border-radius: 23px;
+    background-image: url('granadacastle.png');
+    background-size: cover;
+    background-position: center;
+}
+    .image-plantsinroom {
+    width: 320px;
+    height: 216px;
+    position: absolute;
+    top: 1031px; /* as provided */
+    left: 0px;   /* left image x-coordinate from previous row */
+    border-radius: 23px;
+    background-image: url('plantsinroom.png');
+    background-size: cover;
+    background-position: center;
+}
+      
+      .image-madeiracliff {
+    width: 320px;
+    height: 215px;
+    position: absolute;
+    top: 1100px; /* provided */
+    left: 440px;  /* middle image x-coordinate from previous row */
+    border-radius: 23px;
+    background-image: url('madeiracliff.png');
+    background-size: cover;
+    background-position: center;
+}
+      .image-marblesgloden {
+    width: 320px;
+    height: 225px;
+    position: absolute;
+    top: 1027px; /* provided */
+    left: 880px;  /* right image x-coordinate from previous row */
+    border-radius: 23px;
+    background-image: url('marblesgloden.png');
+    background-size: cover;
+    background-position: center;
+}
+
+      .image-eagle {
+    width: 320px;
+    height: 297px;
+    position: absolute;
+    top: 1350px; /* provided */
+    left: 0px;   /* left image x-coordinate from first row */
+    border-radius: 23px;
+    background-image: url('eagle.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-torch {
+    width: 320px;
+    height: 210px;
+    position: absolute;
+    top: 1437px; /* provided */
+    left: 440px;  /* middle image x-coordinate from first row */
+    border-radius: 23px;
+    background-image: url('torch.png');
+    background-size: cover;
+    background-position: center;
+}
+      .image-mossilas {
+    width: 320px;
+    height: 259px;
+    position: absolute;
+    top: 1388px; /* provided */
+    left: 880px;  /* right image x-coordinate from first row */
+    border-radius: 23px;
+    background-image: url('mossilas.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+        /* Hero text */
+        .hero-text {
+            position: absolute;
+            color: white;
+            font-family: 'Michroma', sans-serif;
+        }
+
+        .hero-text.noah {
+    font-size: 96px;
+    left: 220px;
+    top: 180px;
+}
+
+.hero-text.heide {
+    font-size: 96px;
+    left: 624px;
+    top: 180px;
+}
+
+.hero-text.films {
+    font-size: 128px;
+    left: 220px; 
+    top: 273px;
+    letter-spacing: 0.4em;
+}
+
+
     </style>
 </head>
 
@@ -73,9 +218,45 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <div class="container">
-        <div class="hero-image"></div>
+   <div class="container">
+
+    <!-- HERO IMAGE WITH TEXT -->
+    <div class="hero-image">
+        <div class="hero-text noah">Noah</div>
+        <div class="hero-text heide">Heide</div>
+        <div class="hero-text films">FILMS</div>
     </div>
+
+    <!-- FOREST IMAGE -->
+    <div class="image-forestwide"></div>
+
+    <!-- GRANADA CASTLE IMAGE -->
+    <div class="image-granadacastle"></div>
+
+    <!-- SIMEON RUNNING IMAGE -->
+    <div class="image-simeonrunning"></div>
+     
+    <!-- PLANTS IN ROOM IMAGE -->
+    <div class="image-plantsinroom"></div>
+     
+    <!-- MADEIRA CLIFF IMAGE -->
+    <div class="image-madeiracliff"></div>
+     
+    <!-- MARBLES GOLDEN IMAGE -->
+    <div class="image-marblesgloden"></div>
+     
+    <!-- EAGLE IMAGE -->
+    <div class="image-eagle"></div>
+     
+    <!-- TORCH IMAGE -->
+    <div class="image-torch"></div>
+     
+    <!-- MOSSILAS IMAGE -->
+    <div class="image-mossilas"></div>
+
+
+</div>
+
 
 </body>
 </html>
