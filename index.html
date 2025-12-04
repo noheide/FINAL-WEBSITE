@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Noah Heide Films Website</title>
 
-    <!-- Import Michroma font -->
+    <!-- Import Michroma and Urbanist font -->
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -50,7 +51,7 @@
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    height: 7000px; /* or big enough to contain all images */
+    height: 6800px; /* or big enough to contain all images */
 }
 
 
@@ -311,6 +312,24 @@
     left: 220px;
     top: 180px;
 }
+      .profile-photo {
+    position: absolute;
+    top: 4166px;
+    left: 0px;
+    width: 1200px;
+    height: 586px;
+    border-radius: 22px;
+}
+      .simeonmountain {
+    position: absolute;
+    top: 5900px;
+    left: 0px;
+    width: 1202px;
+    height: 489px;
+    border-radius: 46px;
+}
+
+
 
 .hero-text.heide {
     font-size: 96px;
@@ -334,7 +353,7 @@
       .start-text {
     position: absolute;
     top: 3110px;
-    left: 0px;
+    left: 10px;
     width: 1169px;
     height: 91px;
     font-family: 'Michroma', sans-serif;
@@ -348,7 +367,7 @@
       .subtitle-text {
     position: absolute;
     top: 3215px;
-    left: 0px;
+    left: 10px;
     width: 1200px;
     height: 34px;
     font-family: 'Michroma', sans-serif;
@@ -361,11 +380,126 @@
     padding: 2px; /* optional, for inside spacing */
     box-sizing: border-box; /* ensures border doesn’t expand width */
 }
+      .text-volleyball-story {
+    position: absolute;
+    top: 3310px;    /* same top as the GIF */
+    left: 647px;    /* to the right of the GIF */
+    width: 565px;
+    height: 144px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+      
+      .aboutme-title {
+    position: absolute;
+    top: 4035px;
+    left: 10px;
+    width: 415px;
+    height: 91px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+      .who-noah {
+    position: absolute;
+    top: 4756px;
+    left: 10px;
+    width: 650px;
+    height: 63px;
+    font-family: 'Fanwood Text', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+      .about-noah {
+    position: absolute;
+    top: 4846px;
+    left: 10px;
+    width: 765px;
+    height: 522px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    white-space: pre-line; /* preserves the line breaks in your text */
+}
+
+.connect-text {
+    position: absolute;
+    top: 5766px;
+    left: 309px;
+    width: 700px;
+    height: 128px;
+    font-family: 'Fanwood Text', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.film-custom-text {
+    position: absolute;
+    top: 6362px;
+    left: 0px;
+    width: 1209px;
+    height: 47px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 41px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+      .instagram-text {
+    position: absolute;
+    top: 6518px;
+    left: 10px;
+    width: 550px;
+    height: 58px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;      /* use 300 for light if you prefer the lighter style */
+    font-style: italic;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+.email-text {
+    position: absolute;
+    top: 6518px;
+    left: 693px;       /* positioned to the right of Instagram text */
+    width: 505px;
+    height: 48px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 100%;
+    color: white;
+      }
+
 .gif-volleyballnickel {
     position: absolute;
     width: 593px;
     height: 342px;
-    top: 3351px;  /* directly beneath the text */
+    top: 3300px;  /* directly beneath the text */
     left: 0px;    /* starting from the left margin */
     padding: 10px;
     border-radius: 10px;
@@ -391,6 +525,17 @@
 .gif-volleyballnickel:hover::after {
     opacity: 1;
 }
+
+     .image-busprotect {
+    position: absolute;
+    width: 563px;
+    height: 158px;
+    top: 3490px;
+    left: 650px;
+    border-radius: 23px;
+    object-fit: cover; /* ensures the image fills the container nicely */
+}
+
 
 
 
@@ -447,6 +592,15 @@
 <h1 class="myfilms-title">My Films</h1>
      <h2 class="start-text">It always starts somewhere...</h2> 
      <h3 class="subtitle-text">for me it was a iphone music video at a provincial volleyball championship</h3>
+     <h2 class="aboutme-title">About Me</h2>
+    <h2 class="who-noah">Who is Noah Heide anyways?</h2>
+     <h2 class="connect-text">I would love to connect.</h2>
+
+
+
+<img src="busprotectthisbarn.png" alt="Bus Protect This Barn" class="image-busprotect">
+<img src="ProfilePhoto.png" alt="Profile Photo" class="profile-photo">
+<img src="simeonmountain.png" alt="Simeon Mountain" class="simeonmountain">
 
 
      <a href="https://youtu.be/XEDhoOTpqKE" target="_blank">
@@ -473,12 +627,33 @@
 </a>
      <a href="https://youtu.be/n55SMJlNVYc?si=BAIT8XkBsDeGVpuP" target="_blank">
     <div class="gif-volleyballnickel">
-        <img src="volleyballnickel.gif" alt="Volleyball Nickel GIF" style="width: 100%; height: 100%; border-radius: 10px;">
+        <img src="volleyballnickel.png" alt="Volleyball Nickel GIF" style="width: 100%; height: 100%; border-radius: 10px;">
     </div>
 </a>
 
+<div class="text-volleyball-story">
+    My passion for film making started on a 6 hour bus ride to a volleyball championship. 
+    The popular song by One Republic “I Ain’t Worried” was playing on the speaker, 
+    and I thought there was nothing better to do then start a music video right there 
+    in the bus with my iPhone. Boy was I right. The video was posted everywhere on my 
+    high school’s socials.
+</div>
 
+<p class="about-noah">
+Hey! I’m Noah Heide, a 20 year old filmmaker chasing my passion based out of Kitchener, Ontario. 
 
+Now that you know where it all started, it’s time to tell you a bit about myself. I am a student currently enrolled in the Global Business and Digital Arts program at the University of Waterloo. The first camera I bought was the Sony A6400, and the first thing I did with it was a 10 day trip to Halifax. I stayed at 5 different Airbnb’s for free, in exchange for free professional photography of the property to use for their listing. 
+
+If you can’t tell already, I love to travel. In 2024 during my gap year, I bought a DJI mini 2 se drone and went to Spain and Portugal, capturing stunning views that I wouldn’t otherwise get to see. Some of these shots can be found in my “Chasing the Now” short film, showcased above. 
+
+When I’m not holding a camera, editing, planning, and traveling, I am playing guitar, running, or spending time with friends. I believe in always doing something to better yourself, and staying busy with those things.
+</p>
+<p class="film-custom-text">
+  Every film I create can be customized and adapted to your dreams.
+</p>
+
+<p class="instagram-text">Instagram: @noahheidefilms</p>
+<p class="email-text">noahsimonheide@gmail.com</p>
 
 
 </div>
