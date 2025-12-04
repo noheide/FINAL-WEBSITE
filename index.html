@@ -17,7 +17,7 @@
 
         /* Fixed navigation bar */
         nav {
-            width: 1200px;
+            width: 1230px;
             height: 100px;
             margin: 0 auto;
             display: flex;
@@ -50,7 +50,7 @@
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    height: 1000px; /* or big enough to contain all images */
+    height: 7000px; /* or big enough to contain all images */
 }
 
 
@@ -171,10 +171,130 @@
     background-position: center;
 }
 
+    .gif-flow {
+    position: absolute;
+    width: 593px;
+    height: 342px;
+    top: 2050px;
+    left: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
+/* The overlay text */
+.gif-flow::after {
+    content: "PLAY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    opacity: 0;           /* hidden by default */
+    transition: opacity 0.2s ease;
+}
 
+/* Show "PLAY" on hover */
+.gif-flow:hover::after {
+    opacity: 1;
+}
+    
+.gif-robbiekat {
+    position: absolute;
+    width: 593px;
+    height: 342px;
+    top: 2050px;   /* same as first GIF */
+    left: 603px;   /* place it directly to the left (593px width + 10px gap) */
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
+/* Hover effect: show "PLAY" text */
+.gif-robbiekat::after {
+    content: "PLAY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
 
+.gif-robbiekat:hover::after {
+    opacity: 1;
+}
+
+.gif-throughhiseyes {
+    position: absolute;
+    width: 593px;
+    height: 342px;
+    top: 2402px; /* or calculate manually */
+    left: 0px;  /* align with first GIF */
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Hover effect: show "PLAY" text */
+.gif-throughhiseyes::after {
+    content: "PLAY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.gif-throughhiseyes:hover::after {
+    opacity: 1;
+}
+
+.gif-restlessmind {
+    position: absolute;
+    width: 593px;
+    height: 342px;
+    top: 2402px;  /* same as ThroughHisEyesGIF */
+    left: 603px;   /* directly to the right of the first GIF in the row */
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Hover effect: show "PLAY" text */
+.gif-restlessmind::after {
+    content: "PLAY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.gif-restlessmind:hover::after {
+    opacity: 1;
+}
 
 
 
@@ -204,12 +324,82 @@
     top: 273px;
     letter-spacing: 0.4em;
 }
+    .myfilms-title {
+    position: absolute;
+    font-size: 64px;
+    top: 1920px;  /* adjust as needed */
+    left: 10px;
+    color: white;
+}
+      .start-text {
+    position: absolute;
+    top: 3110px;
+    left: 0px;
+    width: 1169px;
+    height: 91px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+      .subtitle-text {
+    position: absolute;
+    top: 3215px;
+    left: 0px;
+    width: 1200px;
+    height: 34px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    border: 1px solid white; /* as requested */
+    padding: 2px; /* optional, for inside spacing */
+    box-sizing: border-box; /* ensures border doesn’t expand width */
+}
+.gif-volleyballnickel {
+    position: absolute;
+    width: 593px;
+    height: 342px;
+    top: 3351px;  /* directly beneath the text */
+    left: 0px;    /* starting from the left margin */
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Hover effect: show "PLAY" text */
+.gif-volleyballnickel::after {
+    content: "PLAY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.gif-volleyballnickel:hover::after {
+    opacity: 1;
+}
+
+
 
 
     </style>
 </head>
 
 <body>
+
 
     <!-- NAVIGATION -->
     <nav>
@@ -254,6 +444,41 @@
      
     <!-- MOSSILAS IMAGE -->
     <div class="image-mossilas"></div>
+<h1 class="myfilms-title">My Films</h1>
+     <h2 class="start-text">It always starts somewhere...</h2> 
+     <h3 class="subtitle-text">for me it was a iphone music video at a provincial volleyball championship</h3>
+
+
+     <a href="https://youtu.be/XEDhoOTpqKE" target="_blank">
+    <div class="gif-throughhiseyes">
+        <img src="ThroughHisEyesGIF_1.gif" alt="Through His Eyes GIF" style="width: 100%; height: 100%; border-radius: 10px;">
+    </div>
+</a>
+
+     <a href="https://youtu.be/9JQ_vlT0uIU?si=-fo6grrPpHB-IqUs" target="_blank">
+    <div class="gif-robbiekat">
+        <img src="Robbie&KatThumbnailGif.gif" alt="Robbie & Kat GIF" style="width: 100%; height: 100%; border-radius: 10px;">
+    </div>
+</a>
+
+     <a href="https://youtu.be/YOQfmGzWlGY" target="_blank">
+    <div class="gif-flow">
+        <img src="ChasingTheNowGIF.gif" alt="Chasing The Now GIF" style="width: 100%; height: 100%; border-radius: 10px;">
+    </div>
+</a>
+     <a href="https://youtu.be/YOQfmGzWlGY" target="_blank">
+    <div class="gif-restlessmind">
+        <img src="RestlessMindGIF.gif" alt="Restless Mind GIF" style="width: 100%; height: 100%; border-radius: 10px;">
+    </div>
+</a>
+     <a href="https://youtu.be/n55SMJlNVYc?si=BAIT8XkBsDeGVpuP" target="_blank">
+    <div class="gif-volleyballnickel">
+        <img src="volleyballnickel.gif" alt="Volleyball Nickel GIF" style="width: 100%; height: 100%; border-radius: 10px;">
+    </div>
+</a>
+
+
+
 
 
 </div>
