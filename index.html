@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Noah Heide Films Website</title>
 
-    <!-- Import Michroma and Urbanist font -->
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
@@ -16,7 +15,6 @@
             color: white;
         }
 
-        /* Fixed navigation bar */
         nav {
             width: 1230px;
             height: 100px;
@@ -33,36 +31,29 @@
         }
 
         .nav-item {
-            
             font-size: 32px;
             color: white;
             text-decoration: none;
         }
 
-        /* Center nav link */
         .nav-center {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
 
-        /* Main 1200px centered container */
-        .container {
+    .container {
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    height: 6800px; /* or big enough to contain all images */
-}
+    height: 6800px; 
+    }
 
-
-        /* Hero image */
         .hero-image {
             width: 1200px;
             height: 606px;
-            margin-top: 120px; /* space so the fixed nav doesn't overlap */
+            margin-top: 120px; 
             border-radius: 20px;
-            background-size: cover;
-            background-position: center;
             background-image: url('tentfire12119-vhe-700h.png');
             position: relative;
         }
@@ -75,101 +66,84 @@
          left: 0px;
          border-radius: 23px;
          background-image: url('forestwide.png');
-         background-size: cover;
-         background-position: center;
         }
       
     .image-simeonrunning {
     width: 320px;
     height: 226px;
     position: absolute;
-    top: 687px; /* moved up 20px */
+    top: 687px;
     left: 880px;
     border-radius: 23px;
     background-image: url('simeonrunning.png');
-    background-size: cover;
-    background-position: center;
 }
 
-.image-granadacastle {
+    .image-granadacastle {
     width: 320px;
     height: 320px;
     position: absolute;
-    top: 687px; /* keep same as before */
-    left: 440px; /* perfectly centered in 1200px container */
+    top: 687px;
+    left: 440px; 
     border-radius: 23px;
     background-image: url('granadacastle.png');
-    background-size: cover;
-    background-position: center;
 }
     .image-plantsinroom {
     width: 320px;
     height: 216px;
     position: absolute;
-    top: 1031px; /* as provided */
-    left: 0px;   /* left image x-coordinate from previous row */
+    top: 1031px; 
+    left: 0px;
     border-radius: 23px;
     background-image: url('plantsinroom.png');
-    background-size: cover;
-    background-position: center;
 }
       
-      .image-madeiracliff {
+    .image-madeiracliff {
     width: 320px;
     height: 215px;
     position: absolute;
-    top: 1100px; /* provided */
-    left: 440px;  /* middle image x-coordinate from previous row */
+    top: 1100px;
+    left: 440px;
     border-radius: 23px;
     background-image: url('madeiracliff.png');
-    background-size: cover;
-    background-position: center;
+
 }
-      .image-marblesgloden {
+    .image-marblesgloden {
     width: 320px;
     height: 225px;
     position: absolute;
-    top: 1027px; /* provided */
-    left: 880px;  /* right image x-coordinate from previous row */
+    top: 1027px; 
+    left: 880px;
     border-radius: 23px;
     background-image: url('marblesgloden.png');
-    background-size: cover;
-    background-position: center;
 }
 
       .image-eagle {
     width: 320px;
     height: 297px;
     position: absolute;
-    top: 1350px; /* provided */
-    left: 0px;   /* left image x-coordinate from first row */
+    top: 1350px; 
+    left: 0px;  
     border-radius: 23px;
     background-image: url('eagle.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .image-torch {
     width: 320px;
     height: 210px;
     position: absolute;
-    top: 1437px; /* provided */
-    left: 440px;  /* middle image x-coordinate from first row */
+    top: 1437px;
+    left: 440px;
     border-radius: 23px;
     background-image: url('torch.png');
-    background-size: cover;
-    background-position: center;
 }
-      .image-mossilas {
+    .image-mossilas {
     width: 320px;
     height: 259px;
     position: absolute;
-    top: 1388px; /* provided */
-    left: 880px;  /* right image x-coordinate from first row */
+    top: 1388px; 
+    left: 880px; 
     border-radius: 23px;
     background-image: url('mossilas.png');
-    background-size: cover;
-    background-position: center;
 }
 
     .gif-flow {
@@ -184,7 +158,6 @@
     cursor: pointer;
 }
 
-/* The overlay text */
 .gif-flow::after {
     content: "PLAY";
     position: absolute;
@@ -195,11 +168,10 @@
     font-family: 'Michroma', sans-serif;
     font-size: 32px;
     letter-spacing: 2px;
-    opacity: 0;           /* hidden by default */
+    opacity: 0; 
     transition: opacity 0.2s ease;
 }
 
-/* Show "PLAY" on hover */
 .gif-flow:hover::after {
     opacity: 1;
 }
@@ -208,15 +180,15 @@
     position: absolute;
     width: 593px;
     height: 342px;
-    top: 2050px;   /* same as first GIF */
-    left: 603px;   /* place it directly to the left (593px width + 10px gap) */
+    top: 2050px; 
+    left: 603px;  
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-/* Hover effect: show "PLAY" text */
+
 .gif-robbiekat::after {
     content: "PLAY";
     position: absolute;
@@ -239,15 +211,14 @@
     position: absolute;
     width: 593px;
     height: 342px;
-    top: 2402px; /* or calculate manually */
-    left: 0px;  /* align with first GIF */
+    top: 2402px; 
+    left: 0px; 
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-/* Hover effect: show "PLAY" text */
 .gif-throughhiseyes::after {
     content: "PLAY";
     position: absolute;
@@ -270,15 +241,15 @@
     position: absolute;
     width: 593px;
     height: 342px;
-    top: 2402px;  /* same as ThroughHisEyesGIF */
-    left: 603px;   /* directly to the right of the first GIF in the row */
+    top: 2402px; 
+    left: 603px;  
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-/* Hover effect: show "PLAY" text */
+
 .gif-restlessmind::after {
     content: "PLAY";
     position: absolute;
@@ -297,17 +268,13 @@
     opacity: 1;
 }
 
+.hero-text {
+position: absolute;
+color: white;
+font-family: 'Michroma', sans-serif;
+}
 
-
-
-        /* Hero text */
-        .hero-text {
-            position: absolute;
-            color: white;
-            font-family: 'Michroma', sans-serif;
-        }
-
-        .hero-text.noah {
+.hero-text.noah {
     font-size: 96px;
     left: 220px;
     top: 180px;
@@ -346,7 +313,7 @@
     .myfilms-title {
     position: absolute;
     font-size: 64px;
-    top: 1920px;  /* adjust as needed */
+    top: 1920px;
     left: 10px;
     color: white;
 }
@@ -376,14 +343,14 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: white;
-    border: 1px solid white; /* as requested */
-    padding: 2px; /* optional, for inside spacing */
-    box-sizing: border-box; /* ensures border doesn’t expand width */
+    border: 1px solid white; 
+    padding: 2px; 
+    box-sizing: border-box;
 }
       .text-volleyball-story {
     position: absolute;
-    top: 3310px;    /* same top as the GIF */
-    left: 647px;    /* to the right of the GIF */
+    top: 3310px;  
+    left: 647px;  
     width: 565px;
     height: 144px;
     font-family: 'Urbanist', sans-serif;
@@ -432,10 +399,8 @@
     font-weight: 300;
     font-style: normal;
     font-size: 26px;
-    line-height: 100%;
-    letter-spacing: 0%;
     color: white;
-    white-space: pre-line; /* preserves the line breaks in your text */
+    white-space: pre-line; 
 }
 
 .connect-text {
@@ -448,8 +413,6 @@
     font-weight: 400;
     font-style: italic;
     font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0%;
     color: white;
 }
 
@@ -463,8 +426,6 @@
     font-weight: 400;
     font-style: italic;
     font-size: 41px;
-    line-height: 100%;
-    letter-spacing: 0%;
     color: white;
 }
       .instagram-text {
@@ -474,24 +435,21 @@
     width: 550px;
     height: 58px;
     font-family: 'Urbanist', sans-serif;
-    font-weight: 400;      /* use 300 for light if you prefer the lighter style */
+    font-weight: 400;    
     font-style: italic;
     font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 0%;
     color: white;
 }
 .email-text {
     position: absolute;
     top: 6518px;
-    left: 693px;       /* positioned to the right of Instagram text */
+    left: 693px; 
     width: 505px;
     height: 48px;
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 40px;
-    line-height: 100%;
     color: white;
       }
 
@@ -499,15 +457,15 @@
     position: absolute;
     width: 593px;
     height: 342px;
-    top: 3300px;  /* directly beneath the text */
-    left: 0px;    /* starting from the left margin */
+    top: 3300px; 
+    left: 0px;    
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-/* Hover effect: show "PLAY" text */
+
 .gif-volleyballnickel::after {
     content: "PLAY";
     position: absolute;
@@ -533,30 +491,27 @@
     top: 3490px;
     left: 650px;
     border-radius: 23px;
-    object-fit: cover; /* ensures the image fills the container nicely */
+    object-fit: cover;
 }
 
-
-
-
-
-    </style>
+</style>
+  
 </head>
 
 <body>
 
 
-    <!-- NAVIGATION -->
+  
     <nav>
         <a class="nav-item" href="#" style="margin-left: 67px;">My Films</a>
         <a class="nav-item nav-center" href="#about">About Me</a>
         <a class="nav-item" href="#contact" style="margin-right: 67px;">Contact Me</a>
     </nav>
 
-    <!-- HERO SECTION -->
+
    <div class="container">
 
-    <!-- HERO IMAGE WITH TEXT -->
+  
     <div class="hero-image">
         <div class="hero-text noah">Noah</div>
         <div class="hero-text heide">Heide</div>
@@ -589,13 +544,18 @@
      
     <!-- MOSSILAS IMAGE -->
     <div class="image-mossilas"></div>
+     
 <h1 class="myfilms-title">My Films</h1>
-     <h2 class="start-text">It always starts somewhere...</h2> 
-     <h3 class="subtitle-text">for me it was a iphone music video at a provincial volleyball championship</h3>
-     <h2 class="aboutme-title">About Me</h2>
-    <h2 class="who-noah">Who is Noah Heide anyways?</h2>
-     <h2 class="connect-text">I would love to connect.</h2>
 
+<h2 class="start-text">It always starts somewhere...</h2> 
+     
+<h3 class="subtitle-text">for me it was a iphone music video at a provincial volleyball championship</h3>
+     
+<h2 class="aboutme-title">About Me</h2>
+    
+<h2 class="who-noah">Who is Noah Heide anyways?</h2>
+     
+<h2 class="connect-text">I would love to connect.</h2>
 
 
 <img src="busprotectthisbarn.png" alt="Bus Protect This Barn" class="image-busprotect">
